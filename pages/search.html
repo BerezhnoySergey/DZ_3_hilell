@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center; background-image: url(../images/1616595866_46-p-avtozapchasti-fon-56.jpeg); background-size: cover ; background-attachment: fixed; background-repeat: no-repeat;">
+    <h1>Поиск авто:</h1>
+    <form action="https://fom.in.ua/echo" id="avto">
+        <label for="avtomobile">Тип кузова:</label>
+        <br>
+        <select name="kuzov" style="width: 3cm;" id="avtomobile" >
+            <option value="Седан" >Седан</option>
+            <option value="Кабиолет">Кабиолет</option>
+            <option value="Кроссовер">Кроссовер</option>
+            <option value="Грузовик">Грузовик</option>
+            <option value="Хачбэк">Хачбэк</option>
+            <option value="Универсал">Универсал</option>
+            <option value="Купе">Купе</option>
+        </select>
+        <br>
+        <br>
+        <label for="marka">Марка авто:</label>
+        <br>
+        <select name="marka" id="marka" >
+            <option value="Acura">Acura</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Bentley">Bentley</option>
+            <option value="BMW">BMW</option>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Buick">Buick</option>
+            <option value="Audi">Audi</option>
+            <option value="Ford">Ford</option>
+            <option value="Honda">Honda</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Москвич">Москвич</option>
+            <option value="Lada">Lada</option>
+        </select>
+        <br>
+        <br>
+        <label for="strana_proizvoditel">Страна производитель:</label>
+        <br>
+        <select name="strana_proizvoditel" size="1" style="width: 3cm;" id="strana_proizvoditel">
+            <option value="Украина">Украина</option> 
+            <option value="Германия">Германия</option>
+            <option value="США">США</option>
+            <option value="Япония">Япония</option>
+            <option value="Франция">Франция</option>
+            <option value="Корея">Корея</option>
+            <option value="Чехия">Чехия</option>
+            <option value="Италия">Италия</option>
+            <option value="Швеция">Швеция</option>
+            <option value="Китай">Китай</option>
+            <option value="Англия">Англия</option>
+            <option value="Чехия">Чехия</option>
+        </select>
+        <br>
+        <br>
+        <label for="price" >Цена: от</label>
+        <input type="number" max="5000000" min="0" step="500" name="price" value="500" required id="price">
+        до
+        <input type="number" max="5000000" min="0" step="500" name="price" value="1500" required >
+        <br>
+        <br>
+        <label for="year">Год выпуска: от</label>
+        <input type="number" name="year" style="width: 55px;" value="2000" id="year" min="1920" max="2022" step="1">
+        до
+        <input type="number" name="year" style="width: 55px;" value="2022" id="year" min="1920" max="2022" step="1">
+        <br>
+        <label for="crash">Состояние:</label>
+        <select name="crash" size="3" style="width: 3cm;" multiple id="crash">
+            <option value="Битая">Битая</option>
+            <option value="После Бывшей">После Бывшей</option>
+            <option value="В кредите">В кредите</option>
+            <option value="Не растаможенная">Не растаможенная</option>
+            <option value="Хачбэк">Хачбэк</option>
+            <option value="Универсал">Универсал</option>
+            <option value="Купе">Купе</option>
+        </select>
+        <label for="fuel">Тип топлива:</label>
+        <select name="fuel" style="width: 3cm;" size="1" id="fuel">
+            <option value="Бензин">Бензин</option>
+            <option value="Дизель">Дизель</option>
+            <option value="Газ">Газ</option>
+            <option value="Электро">Электро</option>
+        </select>
+        <label for="transmision">Коробка передач:</label>
+        <select name="transmision" style="width: 3cm;" id="transmision">
+            <option value="Автомат">Автомат</option>
+            <option value="Механика">Механика</option>
+            <option value="Типтроник">Типтроник</option>
+            <option value="Электро">Электро</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="Комфорт" >Комфорт:</label>
+         <select name="comfot" required style="width: 3cm;" multiple size="3" id="Комфорт">
+            <option value="Кожа рожа">Кожа рожа</option>
+            <option value="Люк">Люк</option>
+            <option value="Бабий магнит">Бабий магнит</option>
+            <option value="Ксенон">Ксенон</option>
+            <option value="Легкосплавные диски">Легкосплавные диски</option>
+            <option value="Самбуфер">Самбуфер</option>
+        </select>
+        <label for="color">Цвет</label>
+            <input type="color" value="#e66465" name="color" id="color">
+        
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
